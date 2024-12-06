@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #8DA5ED;
+}
+
+header img {
+    width: 150px;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.destaque {
+    font-family: 'Ubuntu', sans-serif;
+    color: #F48635;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #ED3237;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #6787E7;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    font-weight: bold
+}
+
+footer {
+    font-size: 0.9em;
+    background-color: #8DA5ED;
+}
+
+
+.image2 {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10%;
+}
+
+.image3 {
+    width: 400px;
+    height: 350px;
+    border-radius: 3%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1 1 50%;
+}
+
+.circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s;
+}
+
+.circular-image:hover {
+    transform: scale(1.1);
+}
+
+.button-title {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 1.5rem;
+    color: #6787E7;
+    margin-top: 18px;
+}
+
+.editable {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

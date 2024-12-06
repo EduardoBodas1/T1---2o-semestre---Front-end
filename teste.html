@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Dinâmico</title>
+</head>
+<body>
+    <!-- Texto exibido na tela -->
+    <h1 id="displayText">Texto dinâmico na tela</h1>
+
+    <!-- Input para edição -->
+    <input type="text" id="textInput" />
+
+    <!-- Botão para sincronizar o texto -->
+    <button onclick="updateText()">Atualizar Texto</button>
+
+    <script>
+        // Função para inicializar o valor do input com base no texto da tela
+        function initializeInput() {
+            const display = document.getElementById('displayText');
+            const input = document.getElementById('textInput');
+
+            // Define o valor do input com o texto do <h1>
+            input.value = display.textContent;
+        }
+
+        // Função para atualizar o texto exibido com o valor do input
+        function updateText() {
+            const input = document.getElementById('textInput');
+            const display = document.getElementById('displayText');
+
+            // Atualiza o texto exibido com o valor do input
+            display.textContent = input.value;
+        }
+
+        // Inicializa o valor do input ao carregar a página
+        document.addEventListener('DOMContentLoaded', initializeInput);
+    </script>
+</body>
+</html>
